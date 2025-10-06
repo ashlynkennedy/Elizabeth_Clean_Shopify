@@ -1,0 +1,17 @@
+{% if cart.item_count > 0 %}
+<div class="p-4">
+    <div class="max-w-6xl flex-col my-10 x-auto">
+        <div class="dlex items-end justify-between my-5">
+            <h1 class="text-3xl">Your Cart</h1>
+            <a href="{{ routes.all_products_collection_url }}" class="text-blue-600 hover:text-blue-800 font-medium">Continue Shopping</a>
+        </div>
+    </div>
+</div>
+{% else %}
+    <div class="max-w-6xl h-60 my-4 flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-3xl my-4">Your cart is empty</h1>
+            <div class="my-4 py-4"><a href="{{ routes.all_products_collection_url }}" class="border border-gray-400 text-white bg-gray-400 px-8 py-3 hover:bg-gray-600">Continue Shopping</a></div>
+        </div>
+    </div>
+{% endif %}
