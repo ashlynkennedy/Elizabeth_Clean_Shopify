@@ -16,19 +16,19 @@
           "type": "subtotal",
           "settings": {}
         },
-        "update-button": {
-          "type": "update_button",
-          "settings": {}
-        },
         "checkout-button": {
           "type": "checkout_button",
+          "settings": {}
+        },
+        "update-button": {
+          "type": "update_button",
           "settings": {}
         }
       },
       "block_order": [
         "subtotal",
-        "update-button",
-        "checkout-button"
+        "checkout-button",
+        "update-button"
       ],
       "settings": {}
     }
