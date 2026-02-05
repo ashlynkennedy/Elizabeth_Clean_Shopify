@@ -66,7 +66,11 @@
                   {% endif %}
                 </div> 
             {% when 'variant_selector' %}
+<<<<<<< HEAD
                 <div class="my-3">
+=======
+                <variant-selector class="my-3">
+>>>>>>> d6270e590a9df07c78309356e620210798965701
                   {% unless product.has_only_default_variant %}
                     <variant-selector data-url="{{ product.url }}" data-section="{{ section.id }}">
                       {% for option in product.options_with_values %}
